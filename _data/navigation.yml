@@ -1,0 +1,9 @@
+# main links
+main:
+  - title: BLOGS
+    url: /blogs/
+  - title: ME
+    url: /me/
+  - title: PUBLICATIONS
+    url: /publications/
+

@@ -1,0 +1,99 @@
+---
+---
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$','$'],['$$','$$'],['\\(','\\)']],
+          processEscapes: true
+        }
+      }
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    <script type="text/javascript">
+      function yuuki_query_all_nodes_as_array(selector) {
+        return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+      }
+      
+      function replace_code_to_span(node) {
+        is_inline_math = /^\$(.*)\$$/.exec(node.textContent);
+        is_display_math = /^\$\$(.*)\$\$$/ms.exec(node.textContent) ||
+                /^\\begin\{.+\}(.*)\\end\{.+\}/ms.exec(node.textContent);
+        if (is_inline_math || is_display_math) {
+          var parent = node.parentNode;
+          var replacement = document.createElement('span');
+          if (is_display_math) {
+            replacement.class = "yuuki_mathjax_inline"
+          } else {
+            replacement.class = "yuuki_mathjax_display"
+          }
+          replacement.textContent = node.textContent;
+          parent.replaceChild(replacement, node);
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        yuuki_query_all_nodes_as_array("code").map(replace_code_to_span);
+      });
+      </script>
+    <style>
+      * {
+        font-family: 'PT Sans Narrow',sans-serif;
+        }
+
+        .archive, .e-content > p,ul,li {
+          font-size: 15px;
+        }
+
+        
+
+      @media (min-width: 64em) {
+        .archive {
+          float: right;
+          padding-right: 100px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %}
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
+
+    <div class="initial-content">
+      {{ content }}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

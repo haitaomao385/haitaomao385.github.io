@@ -27,7 +27,7 @@ Before transitioning to industry role, I spent five years researching the fundam
 <ul>
   <li>
     <p>
-      <strong> Pragmatic Reasoning with LLMs
+      <strong> Pragmatic Reasoning with LLMs</strong>
       LLM better capture but not understand human language, it is interesting to find potential way for LLMs, to **understand the implied meaning of human language**.
     </p>
   </li>

@@ -29,7 +29,7 @@ The full paper list can be found at [Google Scholar](https://scholar.google.com/
       <p>
         <strong>On the Intrinsic Self-Correction Capability of LLMs: Uncertainty and Latent Concept </strong> <br>
         <strong>Haitao Mao*</strong>, Guangliang Liu* et al.<br>
-        Preprint <br>
+        AACL 2025 <br>
         [<a href="https://arxiv.org/abs/2406.02378">pdf</a>][<a href="https://github.com/HaitaoMao/LLM-self-correction">code</a>][<a href="https://haitaomao.github.io/categories/ResearchSummary/#section32">Short Summary</a>]
       </p>
   </li>
@@ -41,7 +41,7 @@ The full paper list can be found at [Google Scholar](https://scholar.google.com/
         <p>
             <strong>Cross-Domain Graph Data Scaling: A Showcase with Diffusion Models</strong><br>
             <u>Wenzhuo Tang*</u>, <strong>Haitao Mao*</strong> et al.<br>
-            preprint [<a href="https://arxiv.org/abs/2406.01899">pdf</a>][<a href="https://haitaomao.github.io/categories/ResearchSummary/#section132">Short Summary</a>][<a href="https://github.com/WenzhuoTang/UniAug">code</a>]
+            NeurIPS 2026 [<a href="https://arxiv.org/abs/2406.01899">pdf</a>][<a href="https://haitaomao.github.io/categories/ResearchSummary/#section132">Short Summary</a>][<a href="https://github.com/WenzhuoTang/UniAug">code</a>]
         </p>
     </li>
   <li>

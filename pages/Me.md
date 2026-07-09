@@ -3,8 +3,12 @@ permalink: /me/
 title: ME
 layout: single
 ---
-I am an applied scientist in Kiro Science. Post-train and orchestrate LLM agents for industrial-scale code repositories, with a focus on enabling models to continue learning from agent trajectory and support entereprise modernization workflows (e.g., VMware and .NET migration). I feel very fortunately working with Luka Huan. Keywords: post-train, LLM agent, code graph reasoning, software engineering automation, experiment-driven learning, small–large model collaboration, industrial code migration.
 
+I am an applied scientist in Kiro Science, an agentic coding IDE. Previous to that, I work in Rufus LLM Modeling Team, Amazon's agentic AI shopping assistant. My working topic involves LLM Post-training, LLM Agent for Coding & Personalize Recommendation, Verifiable Coding Environments, Reward Hacking Detection, Large-scale Codebase Understanding and Planning. 
+
+My PhD research centers on graph ML and pragmatic reasoning with LLMs (LLM better capture but may not understand both human language and program language), complemented by industry internship experience in generative recommendation and search systems.
+
+I believe that exploiting better underlying structure of data can help LLMs achieve better scaling behavior — for example, program dependency graphs in codebases for coding agents, discourse structure in long-context conversations, and webpage/document connections for deep research agents.
 
 
 
@@ -17,10 +21,16 @@ I am an applied scientist in Kiro Science. Post-train and orchestrate LLM agents
 
 
 
-Before transitioning to industry role, I spent five years researching the fundamental modeling capabilities on networks. During this journey, two moments stand out as sources of profound inner fulfillment.
+Before transitioning to industry role, I spent five years researching the fundamental modeling capabilities on networks. During this journey, three moments stand out as sources of profound inner fulfillment.
 
 
 <ul>
+  <li>
+    <p>
+      <strong> Pragmatic Reasoning with LLMs
+      LLM better capture but not understand human language, it is interesting to find potential way for LLMs, to **understand the implied meaning of human language**.
+    </p>
+  </li>
   <li>
       <p>
         <strong>Pioneering Graph Foundation Models (GFMs) 
